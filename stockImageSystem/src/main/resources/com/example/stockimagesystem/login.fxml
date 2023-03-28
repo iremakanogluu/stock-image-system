@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="605.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stockimagesystem.LoginScreen">
+    <children>
+        <GridPane layoutX="-2.0" layoutY="1.0" prefHeight="605.0" prefWidth="505.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.topAnchor="1.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="153.2" minHeight="10.0" prefHeight="153.2" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="116.4" minHeight="0.0" prefHeight="69.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="222.40000000000003" minHeight="10.0" prefHeight="56.00000000000003" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="310.3999847412109" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="277.4" minHeight="10.0" prefHeight="263.4" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label contentDisplay="CENTER" prefHeight="30.0" prefWidth="169.0" text="          LOGIN" textAlignment="CENTER" GridPane.columnIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font></Label>
+                <TextField fx:id="txtemail" promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <PasswordField fx:id="txtpassword" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button fx:id="btnlogin" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="175.0" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="148.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stockimagesystem.ProfilePageScreen">
+   <children>
+      <HBox prefHeight="140.0" prefWidth="461.0">
+         <children>
+            <Label fx:id="lblPersonInfo" alignment="TOP_LEFT" prefHeight="152.0" prefWidth="143.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="lblNumberOfFollowers" prefHeight="18.0" prefWidth="102.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblNumberOfFollowing" prefHeight="18.0" prefWidth="95.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="140.0" prefWidth="106.0">
+               <children>
+                  <Button fx:id="btnFollowEvent" mnemonicParsing="false" onAction="#followEvent" prefHeight="26.0" prefWidth="98.0" text="Follow">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin></Button>
+                  <Button fx:id="btnGoBack" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="98.0" text="Go Back">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+       </children>
+</VBox>

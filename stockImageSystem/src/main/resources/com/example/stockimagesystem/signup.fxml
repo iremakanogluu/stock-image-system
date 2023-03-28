@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="505.0" prefWidth="605.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stockimagesystem.SignupScreen">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <GridPane prefHeight="471.0" prefWidth="617.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="461.0" minWidth="10.0" prefWidth="131.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="461.0" minWidth="10.0" prefWidth="323.4" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="131.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="267.6" minHeight="10.0" prefHeight="108.4" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="267.6" minHeight="10.0" prefHeight="108.4" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="267.6" minHeight="10.0" prefHeight="108.4" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="267.6" minHeight="10.0" prefHeight="108.4" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="267.6" minHeight="10.0" prefHeight="108.4" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="267.6" minHeight="10.0" prefHeight="108.4" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="215.6" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="113.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <HBox prefHeight="67.0" prefWidth="314.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <children>
+                    <TextField fx:id="firstName" promptText="First Name">
+                        <HBox.margin>
+                            <Insets top="25.0" />
+                        </HBox.margin></TextField>
+                    <TextField fx:id="lastName" promptText="Last Name">
+                        <HBox.margin>
+                            <Insets left="15.0" top="25.0" />
+                        </HBox.margin></TextField>
+                </children></HBox>
+            <TextField fx:id="username" promptText="Username" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="email" promptText="Email" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="gender" promptText="Gender" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <DatePicker fx:id="birthdate" prefHeight="26.0" prefWidth="330.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                <children>
+                    <Button fx:id="signup" mnemonicParsing="false" onAction="#btnSignUp" prefHeight="26.0" prefWidth="131.0" text="Sign Up">
+                        <HBox.margin>
+                            <Insets right="55.0" />
+                        </HBox.margin>
+                    </Button>
+                    <Button fx:id="goLoginPage" mnemonicParsing="false" onAction="#goLoginPage" prefHeight="26.0" prefWidth="131.0" text="Go Login Page" />
+                </children>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP" textAlignment="CENTER" wrappingWidth="317.83396911621094" GridPane.columnIndex="1">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font>
+            </Text>
+            <PasswordField fx:id="password" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        </children>
+        <VBox.margin>
+            <Insets />
+        </VBox.margin>
+    </GridPane>
+
+    <Label fx:id="welcomeText" />
+</VBox>
